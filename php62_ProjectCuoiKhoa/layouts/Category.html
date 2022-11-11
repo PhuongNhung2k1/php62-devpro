@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Danh sách sản phẩm</title>
+</head>
+
+<body>
+    <header>
+        <div class="container container-header">
+            <div class="logo">
+                <img src="../images/icon-logo.png" />
+            </div>
+            <div class="btn btn_search">
+                <input type="text" placeholder="Search" /><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="login">
+                <ul class="menu_header_right">
+                    <li><a href="../layouts/Signin.html">
+                            <i class="fa-solid fa-user-group"></i>
+                        </a></li>
+                    <li> <a href="../layouts/Signup.html">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </a></li>
+                    <li><a href="../layouts/shoppingCart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="container category_prod">
+       <div class="cate_filter">
+            <div class="list_category">
+                <div class="cate--ByProduct">
+                    <h3>Product by category</h3>
+                    <ul>
+                        <li>
+                            <input id="cateID_1" type="checkbox" name="category" />
+                            <label for="cateID_1">Flowers</label>
+                        </li>
+                        <li>
+                            <input id="cateID_2" type="checkbox" name="category" />
+                            <label for="cateID_2">Plants</label>
+                        </li>
+                        <li>
+                            <input id="cateID_3" type="checkbox" name="category" />
+                            <label for="cateID_3">Gift and flower</label>
+                        </li>
+                        <li>
+                            <input id="cateID_4" type="checkbox" name="category" />
+                            <label for="cateID_4">Sale</label>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="cate--Price">
+                    <h3>Product by Price</h3>
+                    <ul>
+                        <li>
+                            <input id="cateID_1" type="checkbox" name="category" />
+                            <label for="cateID_1">50 - 100 VNĐ</label>
+                        </li>
+                        <li>
+                            <input id="cateID_2" type="checkbox" name="category" />
+                            <label for="cateID_2">100 - 150 VNĐ</label>
+                        </li>
+                        <li>
+                            <input id="cateID_3" type="checkbox" name="category" />
+                            <label for="cateID_3">150 - 200 VNĐ</label>
+                        </li>
+                        <li>
+                            <input id="cateID_4" type="checkbox" name="category" />
+                            <label for="cateID_4">200 - 250 VNĐ</label>
+                        </li>
+                        <li>
+                            <input id="cateID_5" type="checkbox" name="category" />
+                            <label for="cateID_5">>300 VNĐ</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cate--ByColor">
+                    <h3>Product by Color</h3>
+                    <ul>
+                        <li>
+                            <input id="cateID_1" type="checkbox" name="category" />
+                            <label for="cateID_1">Red</label>
+                        </li>
+                        <li>
+                            <input id="cateID_2" type="checkbox" name="category" />
+                            <label for="cateID_2">Green</label>
+                        </li>
+                        <li>
+                            <input id="cateID_3" type="checkbox" name="category" />
+                            <label for="cateID_3">White</label>
+                        </li>
+                        <li>
+                            <input id="cateID_4" type="checkbox" name="category" />
+                            <label for="cateID_4">Yellow</label>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="cate--Bysize">
+                    <h3>Product by Size</h3>
+                    <ul>
+                        <li>
+                            <input id="cateID_1" type="checkbox" name="category" />
+                            <label for="cateID_1">S</label>
+                        </li>
+                        <li>
+                            <input id="cateID_2" type="checkbox" name="category" />
+                            <label for="cateID_2">M</label>
+                        </li>
+                        <li>
+                            <input id="cateID_3" type="checkbox" name="category" />
+                            <label for="cateID_3">L</label>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+       </div>
+       <div class="cate_product">
+            <div class="cate_Byresult-search">
+                <ul>
+                    <li><a href="">Mới nhất</a></li>
+                    <li><a href="">Liên quan</a></li>
+                    <li><a href="">Bán chạy nhất</a></li>
+                    <li><a href="">Sale</a></li>
+                </ul>
+            </div>
+            <div class="list_products">
+                 <!-- START  -->
+                 <div class="item">
+                    <div class="product">
+                        <div class="img_product">
+                            <a href="../layouts/Detail_Product.html"><img src="../images/flowernew.jpg" /></a>
+                        </div>
+                        <div class="label_sale">
+                            <span>SALE</span>
+                        </div>
+                    </div>
+                    <div class="product_desc">
+                        <h4>Cotton blen</h4>
+                        <span>$200.00 USD</span>
+                        <span>$100.00 USD</span>
+                        <div class="main_cart">
+                            <div class="main_add_cart">
+                                <button class="btn btn_add">
+                                    <i class="fa-solid fa-cart-plus"></i> Add cart
+                                </button>
+                            </div>
+                            <div class="main_buy_now">
+                                  <button class="btn btn_buy" >Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END  -->
+                 <!-- START  -->
+                 <div class="item">
+                    <div class="product">
+                        <div class="img_product">
+                            <a href="../layouts/Detail_Product.html"><img src="../images/flowernew2.jpg" /></a>
+                        </div>
+                    </div>
+                    <div class="product_desc">
+                        <h4>Plant trees</h4>
+                        <span>$200.00 USD</span>
+                        <span>$100.00 USD</span>
+                        <div class="main_cart">
+                            <div class="main_add_cart">
+                                <button class="btn btn_add">
+                                    <i class="fa-solid fa-cart-plus"></i> Add cart
+                                </button>
+                            </div>
+                            <div class="main_buy_now">
+                                  <button class="btn btn_buy" >Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END  -->
+                <!-- START no SALE -->
+                <div class="item">
+                    <div class="product">
+                        <div class="img_product">
+                            <a href="../layouts/Detail_Product.html"><img src="../images/image5.png" /></a>
+                        </div>
+                    </div>
+                    <div class="product_desc">
+                        <h4>White Lilies and Gerberas</h4>
+                        <span>$250.00 USD</span>
+                        <span>$200.00 USD</span>
+                        <div class="main_cart">
+                            <div class="main_add_cart">
+                                <button class="btn btn_add">
+                                    <i class="fa-solid fa-cart-plus"></i> Add cart
+                                </button>
+                            </div>
+                            <div class="main_buy_now">
+                                  <button class="btn btn_buy" >Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END  -->
+                <!-- START no SALE -->
+                <div class="item">
+                    <div class="product">
+                        <div class="img_product">
+                            <a href="../layouts/Detail_Product.html"><img src="../images/image3.png" /></a>
+                        </div>
+                    </div>
+                    <div class="product_desc">
+                        <h4>White Lilies and Gerberas</h4>
+                        <span>$250.00 USD</span>
+                        <span>$200.00 USD</span>
+                        <div class="main_cart">
+                            <div class="main_add_cart">
+                                <button class="btn btn_add">
+                                    <i class="fa-solid fa-cart-plus"></i> Add cart
+                                </button>
+                            </div>
+                            <div class="main_buy_now">
+                                  <button class="btn btn_buy" >Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END  -->
+                <!-- START no SALE -->
+                <div class="item">
+                    <div class="product">
+                        <div class="img_product">
+                            <a href="../layouts/Detail_Product.html"><img src="../images/image4.png" /></a>
+                        </div>
+                    </div>
+                    <div class="product_desc">
+                        <h4>White Lilies and Gerberas</h4>
+                        <span>$250.00 USD</span>
+                        <span>$200.00 USD</span>
+                        <div class="main_cart">
+                            <div class="main_add_cart">
+                                <button class="btn btn_add">
+                                    <i class="fa-solid fa-cart-plus"></i> Add cart
+                                </button>
+                            </div>
+                            <div class="main_buy_now">
+                                  <button class="btn btn_buy" >Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END  -->
+                <!-- START no SALE -->
+                <div class="item">
+                    <div class="product">
+                        <div class="img_product">
+                            <a href="../layouts/Detail_Product.html"><img src="../images/image5.png" /></a>
+                        </div>
+                    </div>
+                    <div class="product_desc">
+                        <h4>White Lilies and Gerberas</h4>
+                        <span>$250.00 USD</span>
+                        <span>$200.00 USD</span>
+                        <div class="main_cart">
+                            <div class="main_add_cart">
+                                <button class="btn btn_add">
+                                    <i class="fa-solid fa-cart-plus"></i> Add cart
+                                </button>
+                            </div>
+                            <div class="main_buy_now">
+                                  <button class="btn btn_buy" >Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END  -->
+                <!-- START no SALE -->
+                <div class="item">
+                    <div class="product">
+                        <div class="img_product">
+                            <a href="../layouts/Detail_Product.html"><img src="../images/image7.png" /></a>
+                        </div>
+                    </div>
+                    <div class="product_desc">
+                        <h4>White Lilies and Gerberas</h4>
+                        <span>$250.00 USD</span>
+                        <span>$200.00 USD</span>
+                        <div class="main_cart">
+                            <div class="main_add_cart">
+                                <button class="btn btn_add">
+                                    <i class="fa-solid fa-cart-plus"></i> Add cart
+                                </button>
+                            </div>
+                            <div class="main_buy_now">
+                                  <button class="btn btn_buy" >Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END  -->
+                 <!-- START  -->
+                 <div class="item">
+                    <div class="product">
+                        <div class="img_product">
+                            <a href="../layouts/Detail_Product.html"><img src="../images/image2.png" /></a>
+                        </div>
+                        <div class="label_sale">
+                            <span>SALE</span>
+                        </div>
+                    </div>
+                    <div class="product_desc">
+                        <h4>Cotton blen</h4>
+                        <span>$200.00 USD</span>
+                        <span>$100.00 USD</span>
+                        <div class="main_cart">
+                            <div class="main_add_cart">
+                                <button class="btn btn_add">
+                                    <i class="fa-solid fa-cart-plus"></i> Add cart
+                                </button>
+                            </div>
+                            <div class="main_buy_now">
+                                  <button class="btn btn_buy" >Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END  -->
+                 <!-- START  -->
+                 <div class="item">
+                    <div class="product">
+                        <div class="img_product">
+                            <a href="../layouts/Detail_Product.html"><img src="../images/image1.png" /></a>
+                        </div>
+                        <div class="label_sale">
+                            <span>SALE</span>
+                        </div>
+                    </div>
+                    <div class="product_desc">
+                        <h4>Cotton blen</h4>
+                        <span>$200.00 USD</span>
+                        <span>$100.00 USD</span>
+                        <div class="main_cart">
+                            <div class="main_add_cart">
+                                <button class="btn btn_add">
+                                    <i class="fa-solid fa-cart-plus"></i> Add cart
+                                </button>
+                            </div>
+                            <div class="main_buy_now">
+                                  <button class="btn btn_buy" >Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END  -->
+            </div>
+       </div>
+    </main>
+    <footer>
+        <div class="contact_link">
+            <h2>MODEX</h2>
+            <div class="links">
+                <ul>
+                    <li><a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fa-brands fa-twitter-square"></i>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact_info">
+            <div class="channel">
+                <ul>
+                    <li><a href="#">MAN</a></li>
+                    <li><a href="#">WOMAN</a></li>
+                    <li><a href="#">LOOKBOK</a></li>
+                    <li><a href="#">SALE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+            </div>
+            <div class="submit_info">
+                <h2>SUBSCRIBE TO NEWS</h2>
+                <span>
+                    <input type="text" placeholder="Email Adress" />
+                </span>
+                <span>
+                    <input type="submit" value="Submit" />
+                </span>
+            </div>
+        </div>
+        <div class="contact_method">
+            <h2>CONTACT US</h2>
+            <p>
+                San Francisco, California 400 Castro St, San Francisco, CA (+1)
+            </p>
+            <P>
+                Payment information
+            </p>
+            <P>
+                Contact information
+            </p>
+            <P>
+                Reserves information
+            </p>
+            <div class="links">
+                <ul>
+                    <li><a href="#">
+                            <img src="../images/visa.png" />
+                        </a></li>
+                    <li><a href="#">
+                            <img src="../images/contact2.png" />
+                        </a></li>
+                    <li><a href="#">
+                            <img src="../images/contact3.png" />
+                        </a></li>
+                    <li><a href="#">
+                            <img src="../images/contact4.png" />
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
